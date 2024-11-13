@@ -1,0 +1,53 @@
+body{
+	background-color: black;
+	color:#29f633;
+	margin:2rem;
+}
+
+h1{
+	font-size:9rem;
+	line-height:8rem;
+	writing-mode:vertical-rl;
+	text-align: left;
+	padding-left:1.5rem;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: white;
+	color: black;
+	padding-bottom:2rem;
+}
+
+h1::first-letter {
+	color:#29f633;
+}
+
+header{
+	padding-bottom:3rem;
+}
+
+.h1-italic{
+	font-style: oblique;
+	padding-left:3rem;
+	color:white;
+	opacity:50% ;
+
+	
+}
+
+h2{
+	background-color: white;
+	color:black;
+	text-align: center;
+	padding-top:1rem;
+	margin-bottom:1rem;
+	font-size:2rem;
+	
+}
+section:nth-child(2){
+	box-sizing: border-box;
+	display:flex;
+	overflow: hidden;
+	flex-direction: column;
+	position: sticky;
+
+
+}
