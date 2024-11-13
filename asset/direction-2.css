@@ -6,10 +6,10 @@ body{
 
 h1{
 	font-size:9rem;
-	line-height:8rem;
+	line-height:9rem;
 	writing-mode:vertical-rl;
 	text-align: left;
-	padding-left:1.5rem;
+	padding-left:1rem;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: white;
 	color: black;
@@ -23,6 +23,10 @@ h1::first-letter {
 header{
 	padding-bottom:3rem;
 }
+.title-2{
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-color: tomato;
+}
 
 .h1-italic{
 	font-style: oblique;
@@ -32,22 +36,31 @@ header{
 
 	
 }
+.h1-text2{
+	color:tomato;
+	opacity: 70%;
+	text-decoration: underline;
+}
 
 h2{
 	background-color: white;
 	color:black;
 	text-align: center;
 	padding-top:1rem;
-	margin-bottom:1rem;
+	margin-bottom:1.5rem;
 	font-size:2rem;
+	filter:hue-rotate(-50deg) drop-shadow( 6px 6px 6px tomato);
 	
 }
 section:nth-child(2){
-	box-sizing: border-box;
-	display:flex;
-	overflow: hidden;
-	flex-direction: column;
-	position: sticky;
+	
 
+}
 
+footer{
+	border-top: solid;
+	font-size:1rem;
+	color:tomato;
+	padding-top:2rem;
+	position: relative;
 }
