@@ -94,8 +94,9 @@ footer{
 @media (min-width: 1280px){
 
 h1{
+
 	transform:none;
-	font-size: 4rem;
+	font-size: 5rem;
 	margin:-3rem;
 	padding: 3rem;
 	background-color: black;
@@ -138,22 +139,18 @@ section:nth-child(2){
 	transform: none;
 }
 
-section:nth-child(3){
-
-}
-
 section:nth-child(4){
 	transform: none;
 }
 
 section:nth-child(6){
 	transform: none;
+	padding-bottom:3rem;
 }
 
 footer{
 	text-align: center;
 	justify-content: center;
 }
-
 
 }
