@@ -1,7 +1,6 @@
 body{
 	--base:1.2rem;
-
-
+    margin:var(--base);
 	display:grid;
 	font-family: helvetica,bolder;
 	gap:var(--base);
@@ -52,10 +51,11 @@ top:0;
 	color: red;
 	font-family:garamond;
 	font-style:italic;
+	text-align: center;
 }
 
 .h1-text{
-	font-size:var(--base);
+	font-size:1rem;
 	line-height: 1.9rem;
 	padding-left:1.2rem;
 	
@@ -150,9 +150,9 @@ section:nth-child(6) p{
 	}
 
 h1{
-	font-size: 10rem;
+	font-size: 15rem;
 	white-space: pre-wrap;
-	line-height: 5rem;;
+	line-height: 7rem;;
 	margin-top:4rem;
 	padding-bottom: 4rem;
 	padding-left: 2rem;
@@ -161,33 +161,34 @@ h1{
 }
 
 .h1-italic{
-	margin-right: 30rem;
-	margin-left:2rem;
+	background-color: red;
+	max-width: 30rem;
+	color:white;
+	/* margin-right: 30rem; */
+	margin-left:70rem;
 	
 }
-.h1-text{
-	text-align: left;
-	margin-inline-end: 70rem;
-	padding:1rem;
-	/* margin-right:20rem; */
-	/* display:flex; */
-	color:white;
-	background-color: black;
-    text-wrap:pretty;
-	padding-left: 2rem;
-	margin-left:3rem;
-
+.h1-text {
+    text-align: left;
+    margin-inline-end: 70rem;
+    padding: 1rem;
+    display: grid;
+    color: white;
+    background-color: red;
+    border-bottom: 50rem solid red;  /* Makes the bottom border 10rem */
+    padding-left: 2rem;
+    margin-left: 3rem;
+    height: auto; /* Ensures content height is flexible */
+	grid-auto-columns: auto;
 }
 
 .h1-text2{
-	margin-left: 70rem;
-	margin-top: -20rem;
+	margin-left: 40rem;
+	margin-top: -73rem;
 }
 footer{
-	text-align: left;
-	font-size:1.2rem;
-	margin-top:3rem;
-	margin-left:-1rem;
-}
+	text-align:right;
+	font-size:1rem;
+	
 
 }
