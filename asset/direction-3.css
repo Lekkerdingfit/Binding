@@ -149,7 +149,7 @@ section:nth-child(6){
 }
 
 footer{
-	text-align: center;
+	/* text-align: center; */
 	justify-content: center;
 }
 
