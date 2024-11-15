@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Doto:wght@100..900&family=Pacifico&family=Playfair+Display:ital@0;1&display=swap');
+
+body{
+
+	margin:3rem;
+	background-color: white;
+	background-image: linear-gradient(lightgray 1px, transparent 1px),
+					  linear-gradient(90deg, lightgray 1px, transparent 1px);
+	background-size:20px 20px;
+	height:100vw;
+}
+
+p{
+	display:flex;
+	text-wrap:balance;
+	-webkit-hyphens: auto; 
+	hyphens: auto;
+}
+
+
+h1{
+	font-size:3rem;
+	font-family: "Pacifico";
+	line-height:3rem;
+	font-variant: small-caps;
+	background-color: antiquewhite;
+	transform: rotate(12deg);
+	margin-right:-3rem;
+	padding: 1rem 1rem;
+	
+	
+}
+
+.h1-text{
+	font-style:oblique;
+background-color: white;
+filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
+padding:1rem;
+width:16rem;
+
+}
+
+
+h2{
+	font-size:3rem;
+	font-family: "Pacifico";
+	text-align: center;
+	margin-top:2rem;
+	
+}
+
+
+section{
+	margin-top:3rem;
+	display:flex;
+	gap:2rem;
+	flex-direction: column;
+	border-width: 3rem;
+	background-color: antiquewhite;
+	padding:1rem;
+	border-radius: 50;
+}
+section:nth-child(2){
+	transform: rotate(10deg);
+}
+
+section:nth-child(4){
+	transform: rotate(-12deg);
+}
+
+section:nth-child(6){
+	transform: rotate(12deg);
+}
+
+
+.h1-italic{
+	margin-top:3rem;
+}
+
+.h1-text2{
+	margin-left:1rem;
+	text-decoration: underline;
+	
+}
+
+footer{
+	margin-top:5rem;
+	padding-top:2rem;
+	border-top: solid 2px;
+	display: flex;
+	text-align: center;
+}
+
+@media (min-width: 1280px){
+
+h1{
+	transform:none;
+	font-size: 4rem;
+	margin:-3rem;
+	padding: 3rem;
+	background-color: black;
+	color:antiquewhite;
+}
+
+.h1-italic{
+	padding-top:2rem;
+}
+
+.h1-text{
+	width:90vw;
+	justify-content: center;
+	box-sizing: content-box;
+	
+}
+.h1-text2{
+padding-left:25rem;
+	
+}
+
+h2{
+	text-align: center;
+	padding-top: 1rem;
+	
+}
+
+
+
+section{
+	width: 50vh;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap:10px;
+	width:auto;
+	border-radius: 3rem;
+}
+
+section:nth-child(2){
+	transform: none;
+}
+
+section:nth-child(3){
+
+}
+
+section:nth-child(4){
+	transform: none;
+}
+
+section:nth-child(6){
+	transform: none;
+}
+
+footer{
+	text-align: center;
+	justify-content: center;
+}
+
+
+}
