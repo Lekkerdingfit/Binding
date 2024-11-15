@@ -1,43 +1,66 @@
 body{
-	background-color: black;
+	background: linear-gradient(to bottom, #020202, tomato); 
 	color:#29f633;
 	margin:2rem;
 }
 
+
 h1{
 	font-size:9rem;
-	line-height:9rem;
+	line-height:10rem;
 	writing-mode:vertical-rl;
 	text-align: left;
-	padding-left:1rem;
+	padding-left:-2rem;
 	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: white;
 	color: black;
-	padding-bottom:2rem;
+	padding-bottom:1rem;
 }
 
 h1::first-letter {
 	color:#29f633;
 }
 
+
 header{
 	padding-bottom:3rem;
 }
-.title-2{
-	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: tomato;
+
+
+.title-2 {
+    display: inline-block; 
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: tomato;
+    animation: blink 1s linear infinite, colorChange 1.5s linear infinite;
+	
 }
+
+@keyframes blink {
+	0% { opacity: 0; }
+	50% { opacity: 0.5; }
+	100% { opacity: 1; }}
+
+	@keyframes colorChange {
+		0%, 100% { 
+			-webkit-text-stroke-color: tomato;  
+		}
+		50% { 
+			-webkit-text-stroke-color: rgb(7, 93, 232);  
+		}
+	}
 
 .h1-italic{
 	font-style: oblique;
 	padding-left:3rem;
 	color:white;
-	opacity:50% ;
-
+	opacity:70% ;
+	margin-top:-4rem;
+	line-height: 1.7rem;
+	text-decoration:overline;
 	
 }
 .h1-text2{
-	color:tomato;
+	color:white;
 	opacity: 70%;
 	text-decoration: underline;
 }
@@ -49,7 +72,7 @@ h2{
 	padding-top:1rem;
 	margin-bottom:1.5rem;
 	font-size:2rem;
-	filter:hue-rotate(-50deg) drop-shadow( 6px 6px 6px tomato);
+	filter:hue-rotate(-50deg) drop-shadow( 6px 6px 6px #29f633);
 	
 }
 
@@ -57,7 +80,75 @@ h2{
 footer{
 	border-top: solid;
 	font-size:1rem;
-	color:tomato;
+	color:black;
 	padding-top:2rem;
 	position: relative;
+}
+
+@media (min-width: 1280px){
+
+
+	h1{
+		writing-mode: initial;
+		padding-left:10rem;
+		border-style: dotted;
+		border-width: 10px;
+		border-color:#29f633;
+		padding-top:1rem;
+		
+	}
+
+	.title-2 {
+		animation: blink 1s linear infinite;
+	}
+	
+	@keyframes blink {
+		0% { opacity: 0; }
+		50% { opacity: 0.5; }
+		100% { opacity: 1; }
+	}
+.h1-italic{
+	margin-top:3rem;
+	font-size: smaller;
+	text-align: center;
+	text-decoration: none;
+}
+
+	.h1-text{
+		margin-left:10rem;
+		font-size: larger;
+		line-height: 2rem;
+	
+	}
+
+	.h1-text2{
+		text-align: center;
+	}
+
+	h2{
+		border-radius: 16px;
+		
+	}
+	section{
+		max-width: 70rem;
+		display:grid;
+		overflow: hidden;
+		margin-left:auto;
+		margin-right:auto;
+		border-width: 20px;
+		
+	}
+
+footer{
+	text-align: center;
+	
+}
+
+
+
+
+
+
+
+
 }
