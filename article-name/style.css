@@ -7,7 +7,7 @@ body{
 	background-image: linear-gradient(lightgray 1px, transparent 1px),
 					  linear-gradient(90deg, lightgray 1px, transparent 1px);
 	background-size:20px 20px;
-	height:100vw;
+
 }
 
 p{
@@ -27,6 +27,8 @@ h1{
 	transform: rotate(12deg);
 	margin-right:-3rem;
 	padding: 1rem 1rem;
+	filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
+
 	
 	
 }
@@ -37,6 +39,8 @@ background-color: white;
 filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
 padding:1rem;
 width:16rem;
+justify-content: center;
+margin-left:1rem;
 
 }
 
@@ -52,6 +56,7 @@ h2{
 
 section{
 	margin-top:3rem;
+	top:0px;
 	display:flex;
 	gap:2rem;
 	flex-direction: column;
@@ -59,9 +64,14 @@ section{
 	background-color: antiquewhite;
 	padding:1rem;
 	border-radius: 50;
+	position: sticky;
+	top: 20px;
+	filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
+
 }
 section:nth-child(2){
 	transform: rotate(10deg);
+	
 }
 
 section:nth-child(4){
