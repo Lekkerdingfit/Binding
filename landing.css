@@ -6,7 +6,7 @@ body{
 	background-color: white;
 	background-image: linear-gradient(lightgray 1px, transparent 1px),
 					  linear-gradient(90deg, lightgray 1px, transparent 1px);
-	background-size:60px 60px;
+	background-size:50px 50px;
 	height:100vw;
 }
 
@@ -18,6 +18,7 @@ h1{
 	font-family: "Pacifico";
 	border-radius: 30px;
 	line-height: 4rem;
+	text-align: center;
 
 }
 
@@ -110,11 +111,10 @@ ul{
 	align-items: center;
 	transition:transform 1s ease-in-out;
 	perspective: 1000px;
+	transform-style: preserve-3d;
+	z-index: 1;
 }
-.box1 ,.box2, .box3
-{ transform-style: preserve-3d;
 
-}
 
 .box1:hover ,.box2:hover, .box3:hover{
 	transform: rotateY(180deg);
@@ -122,25 +122,7 @@ ul{
 	color:antiquewhite;
 	
 }
-.box1::before, .box2::before, .box3::before{
-	
-	position:absolute;
-	backface-visibility: hidden;
-	font-size: 1.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.box1::after, .box2::after, .box3::after{
-	
-	position:absolute;
-	backface-visibility: hidden;
-	font-size: 1.5rem;
-	transform: rotateY('180deg');
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
+
 .backbox,  .backbox2, .backbox3{
 position:absolute;
 top:0;
@@ -157,6 +139,7 @@ backface-visibility: hidden;
 padding: 20px;
 z-index: -1;
 }
+
 
 footer{
 	font-weight: bold;
