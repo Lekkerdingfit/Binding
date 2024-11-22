@@ -35,8 +35,11 @@ h1{
 	transform: rotate(10deg);
 	display: flex;
 	filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
+	transition:transform 0.2s ease, background-color 0.3s ease;
 }
-
+.backbox, .backbox2,.backbox3{
+	display: none;
+}
 .box2{
 	font-family:  "Pacifico";
 	font-size:3rem;
@@ -52,15 +55,26 @@ h1{
 	transform: rotate(-10deg);
 	display: flex;
 	filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
+	transition:transform 0.2s ease, background-color 0.3s ease;
+}
+.box1:hover , .box3:hover{
+	transform: rotate(-10deg);
+	background-color: black;
+	color:antiquewhite;
 }
 
-
-
+.box2:hover{transform: rotate(20deg);
+	background-color: black;
+	color:antiquewhite;}
 
 
 
 
 @media (min-width: 1280px){
+body{
+	height:fit-content;
+}
+
 h1{
 	text-align: center;
 	font-size:5rem;
@@ -84,11 +98,65 @@ ul{
 	position: relative;
 	justify-content: center;
 	align-items: center;
+	transition:transform 1s ease-in-out;
+	perspective: 1000px;
+}
+.box1 ,.box2, .box3
+{ transform-style: preserve-3d;
+
 }
 
+.box1:hover ,.box2:hover, .box3:hover{
+	transform: rotateY(180deg);
+	background-color: black;
+	color:antiquewhite;
+	
+}
+.box1::before, .box2::before, .box3::before{
+	
+	position:absolute;
+	backface-visibility: hidden;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box1::after, .box2::after, .box3::after{
+	
+	position:absolute;
+	backface-visibility: hidden;
+	font-size: 1.5rem;
+	transform: rotateY('180deg');
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.backbox,  .backbox2, .backbox3{
+position:absolute;
+top:0;
+left:0;
+width: 100%;
+background-color: black;
+color:antiquewhite;
+font-size:2rem;
+display:flex;
+justify-content: center;
+align-items: center;
+transform:rotateY('180deg');
+backface-visibility: hidden;
+padding: 20px;
+z-index: -1;
+}
 
-
-
+footer{
+	font-weight: bold;
+	border-top: solid 2px;
+	margin-top : 10rem;
+	padding-top: 1rem;
+	display:flex;
+	justify-content: space-between;
+	
+}
 
 
 }
