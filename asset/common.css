@@ -1,6 +1,10 @@
 :root{
 	--padding:1.5rem ;
 	--font-size:2rem;
+	--padding1: 1rem;
+	--margin: 2rem;
+	--shadow: drop-shadow(7px 7px 7px rgba(3, 2, 2, 0.25));
+	--color:  antiquewhite;
 }
 
 
@@ -53,23 +57,28 @@ margin:auto;
 	position:flex;
 	top:0;
 	width: 100%;
+	background-color: white;
+	justify-content: center;
+	filter: var(--shadow);
+	border-radius: 40px;
 	
 	
 }
 .navlist{
 	display:flex;
 	list-style: none;
-	margin:0;
-	padding:0;
+	padding:1rem;
 	justify-content: space-around;
 	align-items: center;
 	margin-bottom:5rem;
 	font-size:larger;
+	
+	
 }
 .navlist li a{
 	text-decoration: none;
 	font-weight: bold;
-	padding: 0.5rem 1rem;
+	padding: 1rem 1rem;
 	border-radius: 30px;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
