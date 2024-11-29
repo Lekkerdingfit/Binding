@@ -54,6 +54,9 @@ h2{
 	margin-top:2rem;
 	
 }
+.floating, .floating2{
+	display:none;
+}
 
 
 section{
@@ -286,7 +289,7 @@ h2{
 	background-color: black;
 	color:antiquewhite;
 	width:fit-content;
-	tedt
+	
 }
 @keyframes blinking2{
 	0%{
