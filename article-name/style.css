@@ -54,8 +54,9 @@ h2{
 	margin-top:2rem;
 	
 }
+
 .floating, .floating2{
-	display:none;
+	display: none;
 }
 
 
@@ -74,16 +75,16 @@ section{
 	filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
 
 }
-section:nth-child(5){
+section:nth-child(6){
 	transform: rotate(10deg);
 	
 }
 
-section:nth-child(7){
+section:nth-child(8){
 	transform: rotate(-12deg);
 }
 
-section:nth-child(9){
+section:nth-child(10){
 	transform: rotate(12deg);
 }
 
@@ -268,24 +269,32 @@ h2{
 } */
 
 .floating{
-	animation : blinking 10s infinite ease-in-out;
+	display: flex;
+	position:fixed;
+	left:150;
+	top:0;
+	animation : blinking 8s infinite ease-in-out;
 	background-color: black;
 	color:antiquewhite;
 	width:fit-content;
 }
 @keyframes blinking{
 	0%{
-		transform: translateY(0vh);
+		transform: translateY(50vh);
 	}
 	50%{
-		transform: translateY(75vh);
+		transform: translateY(60vh);
 	}
 	100%{
-		transform: translateY(0vh);
+		transform: translateY(30vh);
 	}
 }
 .floating2{
-	animation : blinking2 10s infinite ease-in-out;
+	display:flex;
+	position: fixed;
+	right:200;
+	top:0;
+	animation : blinking2 15s infinite ease-in-out;
 	background-color: black;
 	color:antiquewhite;
 	width:fit-content;
@@ -293,13 +302,13 @@ h2{
 }
 @keyframes blinking2{
 	0%{
-		transform: translateY(75vh);
+		transform: translateY(50vh);
 	}
 	50%{
-		transform: translateY(100vh);
+		transform: translateY(60vh);
 	}
 	100%{
-		transform: translateY(200vh);
+		transform: translateY(20vh);
 	}
 }
 
@@ -329,8 +338,34 @@ section{
 	/* z-index: 0; */
 	/* top:0; */
 	margin-inline-start:37rem;
+	
 }
 
+.text1:hover::before,
+.text2:hover::before,
+.text3:hover::before,
+.text4:hover::before,
+.text5:hover::before{
+	background-color:antiquewhite;
+	color:black;
+	content: " \25B2 Example";
+	margin-right: 2rem;
+	font-weight: bolder;
+	display: flex;
+	font-size: 1rem;
+
+
+}
+.text1:hover::after,
+.text2:hover::after,
+.text3:hover::after,
+.text4:hover::after,
+.text5:hover::after{
+	background-color: black;
+	color:antiquewhite;
+	
+	
+}
 
 
 
@@ -339,16 +374,16 @@ section p{
 	text-align: center;
 }
 
-section:nth-child(5){
+section:nth-child(6){
 	transform: none;
 	
 }
 
-section:nth-child(7){
+section:nth-child(8){
 	transform: none;
 }
 
-section:nth-child(9){
+section:nth-child(10){
 	transform: none;
 }
 
