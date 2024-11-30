@@ -116,12 +116,14 @@ section:nth-child(10){
 }
 
 footer{
-	margin-top:5rem;
-	padding-top:1rem;
+	margin-top:8rem;
+	margin-bottom:-8rem;
+	padding-top:3rem;
 	border-top: solid 2px;
 	display: flex;
 	justify-content: space-between;
 	width:100%;
+	
 	
 }
 .go-top{
@@ -138,7 +140,7 @@ footer{
 	justify-content: center;
 	display:flex;
 	align-items: center;
-	border-radius: 50%;
+
 	font-weight: bold;
 
 }
@@ -462,24 +464,28 @@ footer{
 	text-align: center;
 	/* background-color: black; */
 	color:antiquewhite;
+	margin-top:15rem;
+	margin-bottom:10rem;
+	padding-top:2rem;
+	padding-bottom:-4rem;
 
 }
 
 .go-top{
 	position:fixed;
 	bottom:2rem;
-	right: 2rem;
+	right: 2.5rem;
 	font-size:1.3rem;
 	background-color: black;
 	color:antiquewhite;
 	border: 1px solid antiquewhite;
 	padding:1rem;
-	width:3rem;
-	height:3rem;
+	width:2.5rem;
+	height:2.5rem;
 	display:flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 50%;;
+	
 
 }
 .go-top:hover{
