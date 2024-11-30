@@ -124,6 +124,29 @@ footer{
 	width:100%;
 	
 }
+.go-top{
+	position:fixed;
+	bottom:2rem;
+	right: 0.7rem;
+	font-size:0.8rem;
+	background-color: transparent;
+	color:black;
+	border: 2px solid black;
+	padding:1rem;
+	width:1rem;
+	height:1rem;
+	justify-content: center;
+	display:flex;
+	align-items: center;
+	border-radius: 50%;
+	font-weight: bold;
+
+}
+
+.go-top:hover{
+	background-color: black;
+	color:antiquewhite;
+}
 
 
 
@@ -440,6 +463,28 @@ footer{
 	/* background-color: black; */
 	color:antiquewhite;
 
+}
+
+.go-top{
+	position:fixed;
+	bottom:2rem;
+	right: 2rem;
+	font-size:1.3rem;
+	background-color: black;
+	color:antiquewhite;
+	border: 1px solid antiquewhite;
+	padding:1rem;
+	width:3rem;
+	height:3rem;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;;
+
+}
+.go-top:hover{
+	background-color: antiquewhite;
+	color:black;
 }
 
 }
