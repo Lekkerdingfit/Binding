@@ -194,21 +194,18 @@ h1{
 
 
 .h1-italic{
-	background-color: white;
-	color:black;
+	background-color:black;
+	color:antiquewhite;
 	margin-top:3rem;
 	padding-top: 2rem;
 	padding-left: 2rem;
     margin-left:20rem;
 	width: 50vw;
-	transform: rotate(3deg);
+	filter:var(--shadow2);
+	
 	
 }
-.h1-italic:hover{
-	background-color: black;
-	color:antiquewhite;
-	transform: none;
-}
+
 .h1-text{
 	width:90vw;
 	justify-content: center;
@@ -218,11 +215,11 @@ h1{
 	width:45vw;	
 }
 
-.h1-text:hover{
+/* .h1-text:hover{
 	background-color: black;
 	color:antiquewhite;
 	transform: rotate(-3deg);
-}
+} */
 .h1-text2{
 /* padding-left:25rem; */
 transform: none;
@@ -230,6 +227,7 @@ background-color: black;
 color:white;
 width:fit-content;
 margin-left: 23rem;
+filter:var(--shadow2);
 
 	
 }
@@ -267,31 +265,7 @@ h2{
 	
 }
 
-/* .floating{
-	background-color: black;
-	color:antiquewhite;
-	width:fit-content;
-	animation: randomFloat 7s infinite ease-in-out;
-	position : absolute;
-  	
-}
-@keyframes randomFloat{
-	0%{
-		transform: translate(0,0);
-	}
-	25%{
-		transform: translate(100px,-90px);
-	}
-	50%{
-		transform: translate(-50px,70px);
-	}
-	75%{
-		transform: translate(80px,30px);
-	}
-	100%{
-		transform: translate(0,0);
-	}
-} */
+
 
 .floating{
 	display: flex;
@@ -302,6 +276,7 @@ h2{
 	background-color: black;
 	color:antiquewhite;
 	width:fit-content;
+	filter:var(--shadow2);
 }
 @keyframes blinking{
 	0%{
@@ -323,6 +298,7 @@ h2{
 	background-color: black;
 	color:antiquewhite;
 	width:fit-content;
+	filter:var(--shadow2);
 	
 }
 @keyframes blinking2{
@@ -340,7 +316,7 @@ h2{
 
 section{
 
-	width: 100vh;
+	width: 50vw;
 	display: flex;
 	/* grid-template-columns: repeat(2,1fr); */
 	gap:10px;
@@ -353,20 +329,22 @@ section{
 	margin-inline-start:20rem;
 	position:sticky;
 	z-index: 2;
+	padding-bottom: 2rem;
 }
 
 .text1,.text2,.text3,.text4,.text5{
 	display: flex;
-	width:70vh;
+	width:30vw;
 	/* margin-top:-10rem; */
 	/* position: sticky; */
 	/* z-index: 0; */
 	/* top:0; */
-	margin-inline-start:37rem;
+	margin-inline-start:30rem;
+	filter:var(--shadow2);
 	
 }
 
-.text1:hover::before,
+/* .text1:hover::before,
 .text2:hover::before,
 .text3:hover::before,
 .text4:hover::before,
@@ -378,6 +356,7 @@ section{
 	font-weight: bolder;
 	display: flex;
 	font-size: 1rem;
+	
 
 
 }
@@ -390,7 +369,7 @@ section{
 	color:antiquewhite;
 	
 	
-}
+} */
 
 
 
