@@ -3,10 +3,12 @@
 body{
 
 	margin:3rem;
-	background-color: white;
-	background-image: linear-gradient(lightgray 1px, transparent 1px),
-					  linear-gradient(90deg, lightgray 1px, transparent 1px);
-	background-size:20px 20px;
+	background-color: black;
+	background-image: linear-gradient(rgba(211, 211, 211, 0.713) 1px, transparent 1px),
+					  linear-gradient(90deg, rgba(211, 211, 211, 0.713) 1px, transparent 1px);
+					  ,opacity: 30%;
+	background-size:30px 30px;
+	margin-bottom:10rem;
 	height:100vw;
 }
 
@@ -23,27 +25,33 @@ h1{
 	font-family: "Pacifico";
 	line-height:3rem;
 	font-variant: small-caps;
-	background-color: antiquewhite;
-	transform: rotate(12deg);
-	margin-right:-3rem;
+	background-color:black;
+	transform: rotate(-10deg);
+	margin-right:-2rem;
 	padding: 1rem 1rem;
+	margin-bottom:2rem;
+	margin-top:-2rem;
+	filter:drop-shadow(7px 7px antiquewhite);
 	
 	
 }
 
 .h1sub{
 	
-		background-color: white;
-		font-size:20px;
-		line-height: 2rem;
-		filter:drop-shadow(7px 7px 7px rgba(3, 2, 2, 0.25));
-	
+		background-color: antiquewhite;
+		font-size:1rem;
+		line-height: 1.6rem;
+		padding:1rem;
+		margin-left:0.5rem;
+		text-align: center;
+		filter:var(--shadow2);
+		border-radius:1rem;
 		
 }
 
 .h1-text{
 	font-style:oblique;
-background-color: white;
+background-color: antiquewhite;
 filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
 padding:1rem;
 width:16rem;
@@ -60,24 +68,62 @@ h2{
 }
 
 .h2sub{
+	font-size:1rem;
 	background-color: white;
-	padding:1rem;
+	padding:0.7rem;
 	margin-top:1rem;
+	width:60%;
+	text-align: center;
+	font-style:italic;
+	font-family:serif;
+	margin-left:2rem;
+	position: fixed;
+	top:60vh;
+	z-index: -1;
+	opacity: 70%;
+	transform:rotate(3deg);
+	mix-blend-mode:difference;
 }
+
+
 
 .manytexts{
 	display:grid;
 	gap:20px;
+	opacity: 85%;
 	
 }
 section{
-	background-color: antiquewhite;
-	filter:var(--shadow);
+	background-color: black;
+	color:antiquewhite;
+	filter:var(--shadow2);
 	padding:1rem;
 	margin-top: 2rem;
 	margin-left:-2rem; 
 	margin-right:-2rem;
+	margin-bottom: 1rem;
+	border: 2px solid antiquewhite;
+	border-radius: 1rem;
+
+}
+
+#h1white{
+	color: white;
+	/* -webkit-text-stroke: 2px  black; */
+}
+ .brand{
+	color:antiquewhite;
+ }
+ 
+summary{
 	
+	list-style: revert;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:1.2rem;
+	text-align: center;
+	font-weight:600;
+	margin-bottom:0.7rem;
+	padding:1rem;
 }
 
 
@@ -93,14 +139,54 @@ section{
 }
 
 footer{
-	margin-top:5rem;
-	padding-top:2rem;
+	font-weight: bold;
 	border-top: solid 2px;
-	display: flex;
+	margin-top : 10rem;
+	padding-top: 1rem;
 	text-align: center;
+	background-color: black;
+	color:antiquewhite;
+	padding: 2rem;
+	margin-left:-3rem;
+	margin-right:-3rem;	
+	justify-content: center;
+	display: flex;
+}
+
+.go-top{
+	position:fixed;
+	bottom:2rem;
+	right: 0.7rem;
+	font-size:0.8rem;
+	background-color: black;
+	color:antiquewhite;
+	border: 2px solid antiquewhite;
+	padding:1rem;
+	width:1rem;
+	height:1rem;
+	justify-content: center;
+	display:flex;
+	align-items: center;
+
+	font-weight: bold;
+
+}
+
+.go-top:hover{
+	background-color: antiquewhite;
+	color:black;
 }
 
 @media (min-width: 1280px){
+
+body{
+	margin:3rem;
+	background-color: white;
+	background-image: linear-gradient(antiquewhite 3px, transparent 3px),
+					  linear-gradient(90deg, antiquewhite 3px, transparent 3px);
+	background-size:50px 50px dot;
+	margin-bottom:10rem;
+}
 
 h1{
 
@@ -120,7 +206,7 @@ h1{
 	-webkit-text-stroke: 1px white;
 	color:black;
 	position:absolute;
-	top:32%;
+	top:50%;
 	left:50%;
 	transform: translate(-50%,-50%);
 	display: inline-block;
@@ -207,6 +293,9 @@ h1{
 	border-radius: 7rem;
 	font-style: italic;
 	text-decoration: underline;
+	opacity: 100%;
+	mix-blend-mode:normal;
+	transform:none;
 }
 
 /* .h1-text{
@@ -234,17 +323,22 @@ padding-left:25rem;
 	 width: 50vw;
 	 padding-right:7rem;
 	margin-left: 25rem; 
+	opacity:100%;
 }
 
 section{
 	width: 120%;
 	background-color: antiquewhite;
+	color:black;
 	border-radius: 3rem;
 	filter:var(--shadow);
 	padding:1.7rem;
+	opacity: 100%;
 	margin-top:3rem;
 	margin-left:0.1rem;	
 	margin-bottom:-3rem;
+	line-height: 1.7rem;
+	text-wrap:balance;
 	/* position:sticky;
 	top:0; */
 	
@@ -339,8 +433,6 @@ footer{
 	color:black;
 }
 
-}
-
 summary{
 	list-style: revert;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -350,3 +442,8 @@ summary{
 	margin-bottom:0.7rem;
 	padding:0.5rem;
 }
+
+
+
+}
+

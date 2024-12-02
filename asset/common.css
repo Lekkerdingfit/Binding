@@ -65,15 +65,19 @@ margin:auto;
 	border-radius: 40px;
 	
 	
+	
 }
 .navlist{
 	display:flex;
 	list-style: none;
 	padding:1rem;
+	margin:-1rem;
 	justify-content: space-around;
 	align-items: center;
 	margin-bottom:5rem;
 	font-size:larger;
+	
+	
 	
 	
 }
