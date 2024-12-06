@@ -90,7 +90,7 @@ section:nth-child(3){
 }
 
 section:nth-child(4){
-	transform: rotate(-12deg);
+	/* transform: rotate(-12deg); */
 	/* position:sticky; */
 	top:40;
 
@@ -98,7 +98,7 @@ section:nth-child(4){
 }
 
 section:nth-child(6){
-	transform: rotate(12deg);
+	/* transform: rotate(12deg); */
 }
 
 
@@ -184,18 +184,20 @@ h1 span::first-letter{
 	padding-top:2rem;
 	background-color:black;
 	color:white;
-	padding:1.5rem;
+	padding:2rem;
+	text-wrap:balance;
 	filter: var(--shadow2);
-	width:50%;
+	width:48%;
 	border-radius: 2rem;
 	margin-left:5rem;
+	/* padding-right:3rem; */
 	
 	
 }
 .h1box{
 	display:flex;
 	/* grid-template-columns: repeat(1 1fr); */
-	gap:5rem;
+	gap:6rem;
 }
 .h1name{
 	background-color: antiquewhite;
@@ -210,6 +212,7 @@ h1 span::first-letter{
 	display:grid;
 	text-decoration: underline;
 
+
 }
 
 .h1-text{
@@ -221,8 +224,8 @@ padding:1rem;
 margin-bottom:1rem;
 width:20%;
 height:50%;
-margin-top:5rem;
-/* transform: rotate(-5deg); */
+margin-top:7rem;
+transform: rotate(5deg);
 
 }
 
@@ -249,7 +252,7 @@ h2{
 }
 
 header{
-	margin-bottom:-5rem;
+	margin-bottom:6rem;
 }
 .scrolldown{
 	background-color:white;
@@ -261,7 +264,7 @@ header{
 	top:60%;
 	z-index: -1;
 	border-radius: 1.5rem;
-	transform: rotate(4deg);
+	/* transform: rotate(4deg); */
 	font-weight: bold;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	animation: flicker 1s infinite;
@@ -283,62 +286,27 @@ header{
 
 
 section{
-	width: 50%;
-
-	display:grid;
-	/* grid-template-columns: repeat(2, 1fr); */
+	width: 55%;
+	display:flex;
 	gap:10px;
-	margin-left: 25rem;
+	margin-left: 23rem;
 	border-radius: 3rem;
-	filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
+	border: 4px solid black;
+	filter:drop-shadow(10px 10px white);
 	overflow-x: hidden;
 	overflow-y: auto;
-	height: 40vh;
+	height: 50vh;
 	padding:2.2rem;
 	text-wrap:balance;
 	padding-top:1rem;
+	margin-top:6rem;
 	line-height: 1.7rem;
 	hyphens: auto;
 	-webkit-hyphens: auto;
-
-
-
-}
-section:nth-child(2){
-	background-color: black;
-	color:white;
-	
-	/* position: sticky; */
-	/* top: 0px;
-	z-index: 1; */
-
-	
-
-}
-section:nth-child(3){
-    margin-top:10rem;
+	margin-bottom:5rem;
 	transform: none;
-	/* position:sticky;
-	top:50px;
-	z-index: 3; */
 
 
-}
-
-
-section:nth-child(4){
-	/* margin-top:10rem; */
-	transform: none;
-	/* position:sticky; */
-	/* top:80px;
-	z-index: 3; */
-	
-
-}
-
-section:nth-child(6){
-	transform: none;
-	padding-bottom:3rem;
 }
 
 footer{
