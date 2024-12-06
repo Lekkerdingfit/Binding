@@ -83,6 +83,7 @@ h2{
 	opacity: 70%;
 	transform:rotate(3deg);
 	mix-blend-mode:difference;
+	
 }
 
 
@@ -279,7 +280,8 @@ h1{
 	filter:  drop-shadow(8px 8px  black);
 }
 .h2sub{
-	padding:1rem;
+	padding:2rem;
+	font-size: larger;
 	background-color: white;
 	margin-top: 5rem;
 	filter:var(--shadow);
@@ -290,7 +292,7 @@ h1{
 	margin-bottom:-10rem;
 	position: fixed;
 	top:41vh;
-	border-radius: 7rem;
+	/* border-radius: 7rem; */
 	font-style: italic;
 	text-decoration: underline;
 	opacity: 100%;

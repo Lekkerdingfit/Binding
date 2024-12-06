@@ -45,7 +45,7 @@ h1{
 .h1-text{
 	font-style:oblique;
 background-color: white;
-filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
+/* filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25)); */
 padding:1rem;
 width:16rem;
 
@@ -124,36 +124,108 @@ footer{
 
 @media (min-width: 1280px){
 
+	body{
+	margin:3rem;
+	background-color: black;
+	background-image: linear-gradient(lightgray 0.6px, transparent 0.6px),
+					  linear-gradient(90deg, lightgray 0.6px, transparent 0.6px);
+	background-size:20px 20px;
+	height:100vw;
+	}
+
+
 h1{
 
 	transform:none;
-	
-	font-size: 5rem;
+	font-size: 5.7rem;
 	margin:-3rem;
 	padding: 6rem;
 	background-color: black;
 	color:antiquewhite;
+	position:relative;
+	overflow: hidden;
+	white-space: nowrap;
+}
+h1 span{
+	display: inline-block;
+	animation: movetext 10s linear infinite;
+}
+@keyframes movetext{
+	0% {transform: translateX(0);
+}
+	100% {transform: translateX(-100%);
+}	
+}
+
+h1 span::first-letter{
+	color: white;
 }
 
 .subh1{
-	font-size: 32px;
+	font-size: 30px;
 	text-align: right;
-	margin-top:-4.3rem;
-	margin-right:2rem;
-	color:antiquewhite;
-	background-color:black;
+	margin-top:2rem;
+	margin-left:30rem;
+	padding:2rem;
+	color:black;
+	background-color:antiquewhite;
+	width:fit-content;
+	transform:rotate(-3deg);
+	border-radius: 2rem;
+	filter: drop-shadow(10px 10px white);
+	margin-bottom:2rem;
+	border:4px solid;
+	
+	
+	
 }
 
 .h1-italic{
 	padding-top:2rem;
+	background-color:black;
+	color:white;
+	padding:1.5rem;
+	filter: var(--shadow2);
+	width:50%;
+	border-radius: 2rem;
+	margin-left:5rem;
+	
+	
+}
+.h1box{
+	display:flex;
+	/* grid-template-columns: repeat(1 1fr); */
+	gap:5rem;
+}
+.h1name{
+	background-color: antiquewhite;
+	color:black;
+	padding:0.7rem;
+	margin-right:2rem;
+	margin-top:0.5rem;
+	font-weight: bold;
+	border-radius: 1rem;
+	justify-content: center;
+	align-items: center;
+	display:grid;
+	text-decoration: underline;
+
 }
 
 .h1-text{
-	width:90vw;
-	justify-content: center;
-	box-sizing: content-box;
-	
+width:50%;
+font-style:oblique;
+background-color: white;
+filter:  drop-shadow(10px 10px  antiquewhite);
+padding:1rem;
+margin-bottom:1rem;
+width:20%;
+height:50%;
+margin-top:5rem;
+/* transform: rotate(-5deg); */
+
 }
+
 .h1-text2{
 padding-left:25rem;
 margin-bottom:-7rem;
@@ -161,30 +233,80 @@ margin-bottom:-7rem;
 }
 
 h2{
+	background-color: black;
+	color:white;
+	padding:2rem;
+	border-radius: 3rem;
 	text-align: center;
-	padding-top: 1rem;
+	font-size:2.1rem;
+	/* padding-top: 1rem; */
+	line-height: 2.7rem;
+	/* text-decoration: underline; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 700;
+	
 	
 }
 
+header{
+	margin-bottom:-5rem;
+}
+.scrolldown{
+	background-color:white;
+	color: black;
+	width:fit-content;
+	padding:1rem;
+	margin:6rem;
+	position:fixed;
+	top:60%;
+	z-index: -1;
+	border-radius: 1.5rem;
+	transform: rotate(4deg);
+	font-weight: bold;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	animation: flicker 1s infinite;
+	
+
+}
+@keyframes flicker{
+	
+	0%{
+		color:black;
+	}
+	50%{
+		color:transparent;
+	}
+	100%{
+		color:black;
+	}
+}
 
 
 section{
-	width: 50vh;
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
+	width: 50%;
+
+	display:grid;
+	/* grid-template-columns: repeat(2, 1fr); */
 	gap:10px;
-	width:auto;
+	margin-left: 25rem;
 	border-radius: 3rem;
 	filter:drop-shadow(8px 10px 10px rgba(3, 2, 2, 0.25));
-
-	
-}
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 40vh;
+	padding:2.2rem;
+	text-wrap:balance;
+	padding-top:1rem;
+	line-height: 1.7rem;
+	hyphens: auto;
+	-webkit-hyphens: auto;
 
 
 
 }
 section:nth-child(2){
-	transform: none;
+	background-color: black;
+	color:white;
 	
 	/* position: sticky; */
 	/* top: 0px;
@@ -220,8 +342,42 @@ section:nth-child(6){
 }
 
 footer{
-	/* text-align: center; */
+	font-weight: bold;
+	border-top: solid 2px;
+	margin-top : 25rem;
+	margin-bottom: 6rem;
+	padding-top: 3rem;
+	padding-bottom: 8rem;
+	text-align: center;
+	background-color: black;
+	color:antiquewhite;
+	padding: 3rem;
+	margin-left:-3rem;
+	margin-right:-3rem;
+	justify-content: space-between;
+	
+}
+
+.go-top{
+	position:fixed;
+	bottom:2rem;
+	right: 2.5rem;
+	font-size:1.3rem;
+	background-color: black;
+	color:antiquewhite;
+	border: 1px solid antiquewhite;
+	padding:1rem;
+	width:2.5rem;
+	height:2.5rem;
+	display:flex;
+	align-items: center;
 	justify-content: center;
+	
+
+}
+.go-top:hover{
+	background-color: antiquewhite;
+	color:black;
 }
 
 }
